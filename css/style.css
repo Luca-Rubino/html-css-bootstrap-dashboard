@@ -10,3 +10,43 @@
 .body {
     font-family: "Roboto", sans-serif;
 }
+
+nav img {
+    width: 30px;
+}
+
+.my_bg-f8f9fa {
+    background-color: #f8f9fa;
+    color: #757575;
+}
+
+.my-color-bell {
+    color: #ff8f00;
+}
+
+.my-bg-e5e5e5 {
+    background-color: #e5e5e5;
+}
+
+.my_botton-search {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: black;
+}
+
+nav form[role="search"] {
+    border: .5px solid whitesmoke;
+    border-radius: .5rem;
+}
+
+@media (max-width: 350px) {
+
+    input::-webkit-input-placeholder{
+        color: pink;
+    }
+
+    input:-moz-placeholder{
+        color: pink;
+    }
+}
