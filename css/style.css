@@ -16,9 +16,13 @@ nav form[role="search"] {
     border-radius: .5rem;
 }
 
+main {
+    width: 100%;
+}
+
 header {
     background-color: #051e34;
-    height: 100vh;
+    width: 10rem;
 }
 
 nav img {
@@ -53,4 +57,23 @@ nav a::after {
     border-radius: 0;
     background: transparent;
     color: black;
+}
+
+.my_dimension {
+    width: 100vw;
+    height: 100vh;
+    margin: .5rem;
+}
+
+/* media sm */
+
+@media (max-width: 578px) {
+
+    nav a::after {
+        content: "";
+    }
+
+    header {
+        width: 5rem;
+    }
 }
