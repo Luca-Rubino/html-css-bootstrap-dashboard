@@ -5,15 +5,35 @@
     font-style: normal;
   }
 
-/*  */
+/* general */
 
 .body {
     font-family: "Roboto", sans-serif;
 }
 
-nav img {
-    width: 30px;
+nav form[role="search"] {
+    border: .5px solid whitesmoke;
+    border-radius: .5rem;
 }
+
+header {
+    background-color: #051e34;
+    height: 100vh;
+}
+
+nav img {
+    width: 3rem;
+}
+
+nav a::after {
+    content: "boolean ";
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* my_class */
 
 .my_bg-f8f9fa {
     background-color: #f8f9fa;
@@ -33,20 +53,4 @@ nav img {
     border-radius: 0;
     background: transparent;
     color: black;
-}
-
-nav form[role="search"] {
-    border: .5px solid whitesmoke;
-    border-radius: .5rem;
-}
-
-@media (max-width: 350px) {
-
-    input::-webkit-input-placeholder{
-        color: pink;
-    }
-
-    input:-moz-placeholder{
-        color: pink;
-    }
 }
