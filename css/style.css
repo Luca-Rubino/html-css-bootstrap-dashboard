@@ -33,7 +33,9 @@ nav form[role="search"] {
 }
 
 header {
-    background-color: #051e34;
+    color: white;
+    background-color:#051e34 ;
+    background-image: url(../img/sidebar-bg.png);
     width: 9rem;
 }
 
@@ -69,7 +71,91 @@ main {
     margin: .5rem;
 }
 
-/* media sm */
+/* ulteriori classi */
+
+.my_none {
+    display: none;
+}
+
+.my_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 91.8vh;
+}
+
+.my_done {
+    background-color: #198754;
+    color: white;
+}
+
+.my_process {
+    background-color:#ffc107 ;
+    color: white;
+}
+
+.my_failed {
+    background-color:#dc3545 ;
+    color: white;
+}
+
+ .my_faq div .my_no-border {
+    border-bottom: none;
+}
+
+.my_faq {
+    border: 1px solid #cbcbcb  ;
+    border-radius: .5rem;
+}
+
+ .my_faq h2 {
+    border-bottom: 1px solid #cbcbcb  ;
+    padding: 0.8rem;
+}
+
+ .my_faq div {
+    border-bottom: 1px solid #cbcbcb  ;
+    padding: 1rem;
+}
+
+.my_tabella {
+    border: solid 1px #cbcbcb ;
+    border-radius: 0.8rem;
+}
+
+.my_border-table {
+    border-radius: 0.5rem;
+    padding: 0.2rem;    
+}
+
+/* css personal <i> */
+
+.fa-bell {
+    color:#ff9003 ;
+    margin-bottom: 0.6rem;
+}
+
+.fa-code {
+    background-color:#f26551 ;
+    border-radius: 50%;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    vertical-align:middle ;
+    color: white;
+    padding-top: 0.3rem;
+    font-size: 1.3rem;
+}
+
+/* id  */
+
+#stats{
+    height: 200px;
+    width: 200px;
+}
+
+/* media */
 
 @media (max-width: 578px) {
 
@@ -80,4 +166,39 @@ main {
     header {
         width: 3.5rem;
     }
+}
+
+@media screen and (min-width:768px){
+
+    .tabelle{
+        height: 76vh;
+    }
+
+    .side{
+        height: 90.7vh;
+    }
+}
+
+.logo-sm{
+    width: 50px;
+    height: 50px;
+
+}
+
+@media screen and (min-width:992px){
+    .my_none{
+        display: inline
+    }
+
+    .tabelle{
+        height: 81vh;
+    }
+
+    .side{
+        height: 93.7vh;
+    }
+
+    .hover-opacity:hover{
+        background-color: #828f95;    
+     }
 }
